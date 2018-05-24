@@ -1,0 +1,13 @@
+<launch>
+  <!--launch the chassis -->
+  <node pkg="openrobot" type="Node_p_chassis" name="Node_p_chassis"  >
+  </node>
+
+<!--launch skeleton with astra -->
+  <node pkg="skeleton_follow" type="skeleton_follow" name="skeleton_follow" >
+  </node>
+
+  <!--launch baidu speech -->
+  <node pkg="baidu_speech" type="simple_speek.py" name="speaker"> 
+  </node>
+</launch>
